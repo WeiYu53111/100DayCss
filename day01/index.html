@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>day01</title>
+</head>
+<body>
+
+<div class="frame">
+    <div class="center">
+        <div class="number">
+            <div class="one-one"></div>
+            <div class="one-two"></div>
+            <div class="zero-one"></div>
+            <div class="zero-two"></div>
+        </div>
+        <span class="big">days</span>
+        <span class="small">CSS Challenge</span>
+    </div>
+</div>
+
+<style>
+    .frame {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 400px;
+        height: 400px;
+        margin-top: -200px;
+        margin-left: -200px;
+        box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.3);
+        backgroud: #43389F;
+        background: linear-gradient(to top right, #43389F 0%, #4ec6ca 100%);
+        z-index: 0;
+    }
+
+    .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 220px;
+        height: 220px;
+        z-index: 1;
+    }
+
+    .number {
+        position: relative;
+        height: 100px;
+    }
+
+    .one-one {
+        position: absolute;
+        left: 25px;
+        width: 25px;
+        height: 100px;
+        top: 0;
+        background: #fff;
+        border-radius: 5px;
+        z-index: 10;
+        box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.3);
+    }
+
+    .one-two {
+        position: absolute;
+        left: 5px;
+        top: 2px;
+        width: 30px;
+        height: 40px;
+        transform: rotate(50deg);
+        background: #fff;
+        border-radius: 5px;
+    }
+
+    .zero-one,.zero-two {
+        position: absolute;
+        top: 0;
+        box-sizing: border-box;
+        border: 24px solid #fff;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        left: 35px;
+        z-index: 8;
+        box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.3);
+    }
+
+    .zero-two {
+        left: 120px;
+        z-index: 6;
+    }
+
+    .big {
+        position: relative;
+        font-size: 82px;
+        display: block;
+        z-index: 20;
+        line-height: 60px;
+        margin-top: 6px;
+        text-transform: uppercase;
+        color: white;
+        margin-left: 4px;
+        font-weight: 700;
+    }
+
+    .small {
+        position: relative;
+        text-transform: uppercase;
+        color: white;
+        font-weight: 700;
+        line-height: 20px;
+        font-size: 23px;
+        letter-spacing: .04em;
+        margin-left: 10px;
+        margin-top: 10px;
+        display: block;
+
+    }
+
+
+</style>
+
+
+</body>
+</html>

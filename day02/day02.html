@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>day02</title>
+    <link rel="stylesheet" href="day02.css">
+
+
+</head>
+<body>
+<div class="frame">
+    <div class="center">
+        <div class="menu-icon">
+            <div class="line-1 no-animation"></div>
+            <div class="line-2 no-animation"></div>
+            <div class="line-3 no-animation"></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+<script>
+    const menuIcon = document.querySelector('.menu-icon');
+    menuIcon.addEventListener('click', function() {
+        menuIcon.classList.toggle('active');
+        const divs = this.querySelectorAll('div');
+
+        for (let i = 0; i < divs.length; i++) {
+            const div = divs[i];
+            div.classList.remove('no-animation');
+        }
+    });
+</script>
