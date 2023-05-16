@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>100day</title>
+</head>
+<body>
+
+
+<div class="frames-container">
+    <div class="iframe-box">
+        <span>day 001</span>
+        <iframe src="./day01/index.html"></iframe>
+    </div>
+    <div class="iframe-box">
+        <span>day 002</span>
+        <iframe src="./day02/day02.html"></iframe>
+    </div>
+    <div class="iframe-box">
+        <span>day 004</span>
+        <iframe src="./day04/day04.html"></iframe>
+    </div>
+</div>
+
+
+<style>
+    body{
+        box-sizing: border-box;
+    }
+
+    .frames-container{
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        width: 1000px;
+        margin: auto;
+    }
+
+
+    .iframe-box{
+        padding: 20px;
+        flex-basis: calc(50% - 40px);
+        max-width: 440px;
+    }
+
+    span {
+        display: block;
+        margin: 10px;
+        font-family: sans-serif;
+    }
+
+    iframe {
+        width: 400px;
+        height: 400px;
+    }
+
+
+</style>
+
+</body>
+</html>
