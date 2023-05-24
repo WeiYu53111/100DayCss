@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>day05</title>
+</head>
+<body>
+<div class="frame">
+    <div class="center">
+
+        <header class="header">
+            <div class="filed">
+                    <span class="title">Weekly report</span>
+            </div>
+            <div class="filed">
+                    <span class="type">Revenue</span>
+            </div>
+            <div class="filed">
+                    <span class="date">01. Feb - 07. Feb</span>
+            </div>
+            <div class="filed">
+                    <span class="value">$ 3621.79</span>
+            </div>
+        </header>
+        <main class="main"></main>
+        <footer class="footer">
+
+        </footer>
+
+
+
+    </div>
+</div>
+
+
+<style>
+    body{
+        box-sizing: border-box;
+    }
+
+    .frame {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 400px;
+        height: 400px;
+        margin-top: -200px;
+        margin-left: -200px;
+        box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+        z-index: 0;
+        background: white;
+        color: #fff;
+        border-radius: 5px;
+    }
+
+    .center {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        width: 280px;
+        height: 220px;
+        transform: translate(-50%,-50%);
+        /*border: solid 1px black;*/
+    }
+
+    .header {
+        width: 100%;
+        height: 60px;
+        background: #F1BA64;
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+
+    }
+
+    .main {
+        width: 100%;
+        height: 110px;
+        background: #3FAF82;
+    }
+
+    .footer {
+        width: 100%;
+        height: 50px;
+        background: #43389F;
+    }
+
+    .filed {
+        position: relative;
+        width: 140px;
+        height: 30px;
+    }
+
+    .title{
+        position: absolute;
+        bottom: 0;
+        left: 10px;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .type {
+        position: absolute;
+        font-size: 13px;
+        font-weight: 600;
+        bottom: 0;
+        right: 10px;
+    }
+
+    .date {
+        position: absolute;
+        font-size: 10px;
+        font-weight: 500;
+        left: 10px;
+        top: 0;
+    }
+
+    .value {
+        position: absolute;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 600;
+        right: 10px;
+        top: 0;
+    }
+
+
+
+</style>
+
+</body>
+</html>
