@@ -1,0 +1,17 @@
+
+
+$brown: #786450;
+
+.frame{
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  background: $brown;
+  margin-top: -200px;
+  margin-left: -200px;
+  box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.3);
+  border-radius: 2px;
+  background: linear-gradient(to top right, #EEBE6C 0%, #CA7C4E 100%);
+}
