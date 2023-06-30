@@ -1,0 +1,93 @@
+$deepBlue: #264057;
+$lightBlue: #5F98CD;
+
+.frame{
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  background: $deepBlue;
+  margin-top: -200px;
+  margin-left: -200px;
+  box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.3);
+  border-radius: 2px;
+  /*background: linear-gradient(to top right, #EEBE6C 0%, #CA7C4E 100%);*/
+}
+
+.center {
+  position: absolute;
+  top: 50px;
+  left: 40px;
+  height: 299px;
+  width: 320px;
+  background: #fff;
+  border-radius: 3px;
+  /*overflow: hidden;*/
+  box-shadow: 10px 10px 15px 0 rgba(0,0,0,0.3);
+  /*border: 1px solid black;*/
+}
+
+
+.head {
+  position: absolute;
+  top: 0;
+  background: $lightBlue;
+  width :320px;
+  height: 50px;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+
+  .menu-icon {
+    z-index: 2;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: #3FAF82;
+
+    .line-1 {
+      border-radius: 3px;
+      z-index: 3;
+      position: absolute;
+      top : 10px;
+      width: 40px;
+      height: 8px;
+      background: #ffffff;
+    }
+
+    .line-2  {
+      @extend .line-1;
+      top : 40px;
+      width: 100%;
+    }
+
+  }
+
+
+
+  .page_title {
+    width: 200px;
+    height: 100%;
+    background: #786450;
+  }
+
+  .search-icon {
+    width: 50px;
+    height: 50px;
+    background: #F5E8DF;
+  }
+
+
+
+
+
+}
+
+.content {
+  position: absolute;
+  top: 50px;
+  border-bottom: 0;
+  width: 320px;
+}
+
